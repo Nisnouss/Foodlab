@@ -24,7 +24,8 @@ a{
     font-size: 16px;
 }
 
-nav ul li{
+nav ul li,
+ul li{
     list-style: none;
 }
 
@@ -37,7 +38,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 header .divlogo{
@@ -84,4 +85,131 @@ header .divnav>a:hover{
     background-color: white;
     color: var(--green);
     transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--darkblue);
+    max-width: 1440px;
+    margin: auto;
+    height: 300px;
+    align-content: center;
+}
+
+footer .haut{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    max-width: 1150px;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+footer .haut ul{
+    padding: 0;
+}
+
+footer .haut ul li{
+    margin-bottom: 10px;
+}
+
+footer .haut ul li a:hover{
+    color: var(--green);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .haut a{
+    color: #9CA3AF;
+}
+
+footer .haut h2{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer .haut p{
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+footer .haut .divlogo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+footer .haut .divlogo p i{
+    color: var(--green);
+    font-size: 21px;
+}
+
+footer .haut .divlogo a{
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+footer .haut .artform #mailnew{
+    display: grid;
+    gap: 20px;
+}
+
+footer .haut .artform #mailnew label{
+    color: white;
+    font-weight: 700;
+    font-style: 18px;
+}
+
+footer .haut .artform #mailnew #mail{
+    border: 1px solid #374151;
+    background-color: #374151;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+footer .haut .artform #mailnew #abonne{
+    border: 1px solid var(--green);
+    background-color: var(--green);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+footer .haut .artform #mailnew #abonne:hover{
+    background-color: white;
+    color: var(--green);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .bas{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1150px;
+    border-top: 0.5px solid #9CA3AF;
+}
+
+footer .bas p{
+    color: #9CA3AF;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+footer .bas .link a{
+    color: #9CA3AF;
+    font-weight: 400;
+}
+
+footer .bas .link a:hover{
+    color: var(--green);
+    transition: all 0.3s ease-in-out;
+}
+
+footer .bas .link{
+    padding-top: 20px;
 }
