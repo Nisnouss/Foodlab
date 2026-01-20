@@ -1,0 +1,87 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: var(--outfit);
+}
+
+:root{
+    --outfit: "Outfit", sans-serif;
+    --darkblue: #1F2937;
+    --green: #10B981;
+    --orange: #F59E0B;
+    --blue: #3B82F6;
+    --lightgreen: #F0FDF4;
+    --grey: #F3F4F6;
+    --lightgreen: #F0FDF4;
+}
+
+a{
+    text-decoration: none;
+    color: var(--darkblue);
+    font-size: 16px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+/* Header */
+
+header{
+    margin: 20px auto;
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header .divlogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .divlogo  p i{
+    color: var(--green);
+    font-size: 21px;
+}
+
+header .divlogo a{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .divnav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .divnav nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+header .divnav nav ul li a:hover{
+    color: var(--green);
+    transition: all 0.3s ease-in-out;
+}
+
+header .divnav>a{
+    border: 1px solid var(--green);
+    border-radius: 23px;
+    background-color: var(--green);
+    padding: 10px 15px;
+    color: white;
+}
+
+header .divnav>a:hover{
+    background-color: white;
+    color: var(--green);
+    transition: all 0.3s ease-in-out;
+}
